@@ -1,0 +1,322 @@
+/* #hide {
+  display: none;
+}
+.texts {
+  font-size: 16px !important;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: auto !important;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+} */
+.no-decoration {
+  text-decoration: none;
+}
+/* .skipcolor {
+  color: rgb(255, 103, 129);
+} */
+
+.logo > img {
+  align-items: center;
+  width: 300px !important;
+}
+/* .layerr {
+  
+  background-color: rgba(239, 217, 213, 0.767);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+/* .wrapthat {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  margin: 0 auto;
+  
+} */
+
+/* .card {
+  background-color: #fff;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+
+  height: max-content;
+  max-width: 600px;
+  padding: 20px;
+
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  font-size: 22px;
+
+  text-align: center;
+}
+
+form input {
+  display: flex;
+  flex-direction: row;
+  /* width: 500px !important; */
+  border: 2px solid rgb(138, 136, 136);
+
+  /* height: 30px; */
+  border-radius: 3px;
+
+  color: #000;
+  transition: 0.5s;
+  margin: auto;
+}
+form input[type="submit"] {
+  border: none;
+}
+/* form input[type="text"] {
+  font-size: medium;
+} */
+form > input:focus {
+  outline: none;
+}
+input::placeholder {
+  font-weight: medium;
+  color: rgb(167, 161, 161);
+  font-size: medium;
+}
+
+form label {
+  display: flex;
+  flex-direction: row;
+  color: rgb(107, 106, 106);
+  font-weight: bold;
+
+  text-align: center;
+  font-size: small;
+  font-weight: lighter;
+}
+
+/* form input[type="submit"] {
+  background: rgb(255, 103, 129) !important;
+} */
+/* .button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 270px;
+  height: 50px;
+  background: rgb(255, 103, 129) !important;
+  border: none;
+  border-radius: 1px;
+  color: #fff !important;
+  font-size: x-large;
+  line-height: normal;
+  margin: auto;
+
+  padding: 3px 20px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: transparent !important;
+  color: rgb(255, 103, 129) !important;
+  cursor: pointer;
+  border: 1px solid rgb(255, 103, 129) !important;
+} */
+
+/* Mailchimp CSS */
+
+form .mc-field-group {
+  margin-bottom: 15px;
+}
+
+form .indicates-required {
+  color: #000000;
+  font-size: 1em;
+  text-align: center;
+}
+
+form input + .mce_inline_error {
+  display: inline-block;
+  font-size: 0.5em;
+  position: relative;
+}
+
+form input + .mce_inline_error:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(255, 255, 255);
+  position: absolute;
+  top: -10px;
+}
+
+form #mce-success-response {
+  background: #000000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  width: 500px;
+  transition: 1s;
+  animation: response 1s forwards;
+}
+
+form #mce-error-response {
+  background: #000000;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  width: 500px;
+  transition: 1s;
+  animation: response 1s forwards;
+}
+form #mce-error-response a {
+  color: #000;
+}
+
+form label .asterisk {
+  color: #000000;
+  font-size: 0.5em;
+  vertical-align: super;
+}
+/*user type hide*/
+#mce-MMERGE2 {
+  display: none;
+}
+#userlabel {
+  display: none;
+}
+#mce-MMERGE3 {
+  display: none;
+}
+#userlabelfirst {
+  display: none;
+}
+
+/* form input[type="submit"] {
+  background: rgb(255, 103, 129) !important;
+} */
+@media (max-width: 768px) {
+  header {
+    padding: 80px 0;
+  }
+  header h1 {
+    font-size: 4em;
+  }
+  body {
+    color: #000 !important;
+  }
+  .footer-container {
+    color: #000 !important;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    color: #000 !important;
+  }
+  .footer-container {
+    color: #000 !important;
+  }
+  .logo > img {
+    align-items: center;
+    width: 150px !important;
+  }
+  .card {
+    background-color: transparent !important;
+    font-size: 10px;
+    box-shadow: none;
+    /* max-width: 70vw; */
+  }
+  .texts {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  form input {
+    display: flex;
+    flex-direction: row;
+    width: 150px !important;
+    padding: 10px !important;
+
+    height: 30px;
+
+    transition: 0.5s;
+    font-size: small;
+  }
+  /* .form input[type="submit"] {
+    height: 40px !important;
+    width: 150px;
+  } */
+
+  /* .button {
+    height: 40px;
+    width: 250px;
+  } */
+  /* form label {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  } */
+  /* form .button {
+    max-width: 200px;
+    height: 50px;
+
+    font-size: large;
+    line-height: normal;
+    margin: auto;
+  } */
+
+  form .indicates-required {
+    color: #000000;
+    font-size: 0.5em;
+    text-align: center;
+  }
+  form #mce-success-response {
+    background: #000000;
+    padding: 25px;
+    text-align: center;
+    font-size: small;
+    color: #fff;
+    width: 300px;
+    transition: 1s;
+    animation: response 1s forwards;
+  }
+
+  form #mce-error-response {
+    background: #000000;
+    padding: 30px;
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+    width: 300px;
+    font-size: small;
+    transition: 1s;
+    animation: response 1s forwards;
+  }
+}
