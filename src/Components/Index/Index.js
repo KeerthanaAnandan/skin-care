@@ -19,13 +19,13 @@ export default function Index() {
         <div>
           {" "}
           <a
-            href="https://www.actualizecenter.com/"
+            href="https://miacosa.de/"
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
             {/* <img src={logo} alt="" className="w-2/12" /> */}
-            <h3 className="p-3 text-bold text-2xl">Miacosa Cosmetics</h3>
+            <h3 className="p-3 text-bold text-2xl">Miacosa</h3>
           </a>
         </div>
         {/* <div className="p-1">

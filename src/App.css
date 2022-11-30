@@ -197,11 +197,11 @@ body {
   margin-top: 5%; */
 }
 /* p - decorative, not required */
-p {
+/* p {
   margin-top: 2rem;
   font-size: 0.75rem;
   text-align: center;
-}
+} */
 
 /* container for all of the switch elements 
   - adjust "width" to fit the content accordingly 
