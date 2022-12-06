@@ -69,8 +69,8 @@ export default function Index() {
         <div className="flex bg-primary flex-col flex-wrap p-2 w-10/12 md:w-6/12  mx-1 mb-5 justify-between items-center rounded-lg">
           <p className="text-3xl decoration-8 font-bold m-1">
             {lan == "English"
-              ? "What is your skin care type ?"
-              : "Was ist Ihr Hautpflegetyp?"}
+              ? "What is your self care type ?"
+              : "Was ist Ihr Self-Care-Typ?"}
           </p>
           <br />
           <img src={img} alt="" className="md:w-10/12 " />

@@ -16,11 +16,7 @@ export default function ({ isTrue }) {
       {/* <Link to="https://www.actualizecenter.com/"> */}
       <div>
         {" "}
-        <a
-          href="https://www.actualizecenter.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/" rel="noopener noreferrer">
           {" "}
           {/* <img src={logo} alt="" className="w-2/12" /> */}
           <h3 className="p-3 text-bold text-2xl">Miacosa Cosmetics</h3>
@@ -33,7 +29,7 @@ export default function ({ isTrue }) {
           <span class="toggle-label">Bluetooth</span>
         </label>
       </div> */}
-      <div class="container">
+      {/* <div class="container">
         <div class="switches-container">
           <input
             type="radio"
@@ -59,7 +55,7 @@ export default function ({ isTrue }) {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <img onClick={clickHandler} src={logo} alt="" className="w-2/12" /> */}
       {/* </Link> */}
     </div>

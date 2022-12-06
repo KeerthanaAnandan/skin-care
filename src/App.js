@@ -26,8 +26,16 @@ function App() {
             path="/"
             element={
               <>
-                {/* <Nav /> */}
                 <Index />
+              </>
+            }
+          />
+          <Route
+            path="/form"
+            element={
+              <>
+                <Nav />
+                <Form />{" "}
               </>
             }
           />
@@ -73,7 +81,7 @@ function App() {
             path="/quiz"
             element={
               <>
-                {/* <Nav /> */}
+                <Nav />
                 <Quiz />
               </>
             }
