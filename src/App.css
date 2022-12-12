@@ -301,3 +301,17 @@ body {
   div:nth-of-type(2) {
   opacity: 1;
 }
+
+/* tailwind css toggle */
+/* body {
+
+  color: white;
+} */
+
+input:checked {
+  background-color: #22c55e; /* bg-green-500 */
+}
+
+input:checked ~ span:last-child {
+  --tw-translate-x: 1.75rem; /* translate-x-7 */
+}

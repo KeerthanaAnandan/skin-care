@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function () {
   const navigate = useNavigate();
   const [ref, setRef] = useState(1);
-  const [progressPercentage, setProgressPercentage] = useState(2);
+  const [progressPercentage, setProgressPercentage] = useState(8);
   const [showError, setShowError] = useState(false);
   const [questions, setQuestions] = useState([
     {
@@ -28,7 +28,7 @@ export default function () {
           op: "Doing yoga",
           opAlt: "Yoga machen",
           isSelected: false,
-          score: 0.5,
+          score: 1,
           type: "Spiritual",
         },
         {
@@ -36,7 +36,7 @@ export default function () {
           op: "Reading books",
           opAlt: "Bücher lesen",
           isSelected: false,
-          score: 0,
+          score: 1,
           type: "Mental",
         },
       ],
@@ -63,7 +63,7 @@ export default function () {
           op: "Take a walk / workout",
           opAlt: "Machen Sie einen Spaziergang / trainieren Sie",
           isSelected: false,
-          score: 0.5,
+          score: 1,
           type: "Physical",
         },
         {
@@ -71,7 +71,7 @@ export default function () {
           op: "Spend time with friends ",
           opAlt: "Verbringen Sie Zeit mit Freunden",
           isSelected: false,
-          score: 0,
+          score: 1,
           type: "Social",
         },
       ],
@@ -95,7 +95,7 @@ export default function () {
           op: "buy a course/ go to development class ",
           opAlt: "einen Kurs kaufen/zu einem Entwicklungskurs gehen",
           isSelected: false,
-          score: 0.5,
+          score: 1,
           type: "Practical",
         },
         {
@@ -104,7 +104,7 @@ export default function () {
           opAlt:
             "Suchen Sie einen Therapeuten auf / kaufen Sie eine Zeitschrift",
           isSelected: false,
-          score: 0,
+          score: 1,
           type: "Emotional",
         },
       ],
@@ -128,7 +128,7 @@ export default function () {
           op: "Visit the museum",
           opAlt: "Besuchen Sie das Museum",
           isSelected: false,
-          score: 0.5,
+          score: 1,
           type: "Mental",
         },
         {
@@ -136,7 +136,7 @@ export default function () {
           op: "Yoga/meditate ",
           opAlt: "Yoga/meditate",
           isSelected: false,
-          score: 0,
+          score: 1,
           type: "Spiritual",
         },
       ],
@@ -147,6 +147,24 @@ export default function () {
       question: "Do you practise Gratitude?",
       quesAlt: "Praktizierst du Dankbarkeit?",
       category: "Emotional",
+      options: [
+        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        {
+          id: 2,
+          op: "SomeWhat",
+          opAlt: "Etwas",
+          isSelected: false,
+          score: 0.5,
+        },
+        { id: 3, op: "No", opAlt: "Nein", isSelected: false, score: 0 },
+      ],
+    },
+    //spiritual
+    {
+      id: 21,
+      question: "Do you believe in universe/god ?",
+      quesAlt: "Glaubst du an das Universum/Gott",
+      category: "Spiritual",
       options: [
         { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
         {
@@ -224,6 +242,24 @@ export default function () {
       question: "Do you journal?",
       quesAlt: "Tagebuchst du?",
       category: "Emotional",
+      options: [
+        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        {
+          id: 2,
+          op: "SomeWhat",
+          opAlt: "Etwas",
+          isSelected: false,
+          score: 0.5,
+        },
+        { id: 3, op: "No", opAlt: "Nein", isSelected: false, score: 0 },
+      ],
+    },
+    //spiritual
+    {
+      id: 44,
+      question: "Do you spend a lot of time with nature ?",
+      quesAlt: "Verbringen Sie viel Zeit mit der Natur?",
+      category: "Spiritual",
       options: [
         { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
         {
@@ -333,6 +369,7 @@ export default function () {
   const [count, setCount] = useState(0);
   const inputElement = useRef("1");
   const [lan, setLan] = useState(localStorage.getItem("lan"));
+  const [idx, setIdx] = useState(0);
   useEffect(() => {
     console.log(localStorage.getItem("lan"), "locoq");
   }, []);
@@ -372,16 +409,26 @@ export default function () {
     // }
     if (count < questions.length - 1) {
       setCount(count + 1);
-      setProgressPercentage(progressPercentage + 2.4);
+      setProgressPercentage(progressPercentage + 6);
     } else {
       navigate("/form");
       console.log("elseeeeeeeee");
+      let commonCat = questions.filter((val) => val.category === "Common");
+      console.log(commonCat);
       let filteredFirst = questions.filter(
         (val) => val.category === "Physical"
       );
-      let filteredSecond = questions.filter((val) => val.category === "Social");
-      let filteredThird = questions.filter((val) => val.category === "Voyager");
+      let filteredSecond = questions.filter(
+        (val) => val.category === "Emotional"
+      );
+      let filteredThird = questions.filter((val) => val.category === "Social");
       let filteredFourth = questions.filter((val) => val.category === "Mental");
+      let filteredFifth = questions.filter(
+        (val) => val.category === "Practical"
+      );
+      let filteredsixth = questions.filter(
+        (val) => val.category === "Spiritual"
+      );
       //   let reduced = filteredFirst.filter(
       //     (val) => val.options.findIndex((itm) => itm.isSelected === true) !== -1);
       //.reduce((total = 0, curr) => total + curr.score);
@@ -392,6 +439,36 @@ export default function () {
       let score2 = 0;
       let score3 = 0;
       let score4 = 0;
+      let score5 = 0;
+      let score6 = 0;
+
+      for (let i = 0; i < commonCat.length; i++) {
+        for (let j = 0; j < commonCat[i].options.length; j++) {
+          if (commonCat[i].options[j].isSelected) {
+            console.log(commonCat[i].options[j].type);
+            if (commonCat[i].options[j].type == "Physical") {
+              score1 = score1 + 1;
+              console.log("this should add to physical");
+            } else if (commonCat[i].options[j].type == "Emotional") {
+              score2 = score2 + 1;
+              console.log("this should add to Emotional");
+            } else if (commonCat[i].options[j].type == "Social") {
+              score3 = score3 + 1;
+              console.log("this should add to Social");
+            } else if (commonCat[i].options[j].type == "MentaL") {
+              score4 = score4 + 1;
+              console.log("this should add to Menta");
+            } else if (commonCat[i].options[j].type == "Practical") {
+              score5 = score5 + 1;
+              console.log("this should add to Practical");
+            } else {
+              score6 = score6 + 1;
+              console.log("this should add to spiti");
+            }
+            // score1 = score1 + commonCat[i].options[j].score;
+          }
+        }
+      }
       for (let i = 0; i < filteredFirst.length; i++) {
         for (let j = 0; j < filteredFirst[i].options.length; j++) {
           if (filteredFirst[i].options[j].isSelected) {
@@ -420,15 +497,45 @@ export default function () {
           }
         }
       }
-      localStorage.setItem("Type", "First");
-      localStorage.setItem("score1", score1);
-      localStorage.setItem("score2", score2);
-      localStorage.setItem("score3", score3);
-      localStorage.setItem("score4", score4);
-      // console.log("score1", score1, (score1 / 40) * 100);
-      // console.log("score2", score2, (score2 / 40) * 100);
-      // console.log("score3", score3, (score3 / 40) * 100);
-      // console.log("score4", score4, (score4 / 40) * 100);
+      for (let i = 0; i < filteredFifth.length; i++) {
+        for (let j = 0; j < filteredFifth[i].options.length; j++) {
+          if (filteredFifth[i].options[j].isSelected) {
+            score5 = score5 + filteredFifth[i].options[j].score;
+          }
+        }
+      }
+      for (let i = 0; i < filteredsixth.length; i++) {
+        for (let j = 0; j < filteredsixth[i].options.length; j++) {
+          if (filteredsixth[i].options[j].isSelected) {
+            score6 = score6 + filteredsixth[i].options[j].score;
+          }
+        }
+      }
+      localStorage.setItem("Type", "Physical");
+
+      // localStorage.setItem("score1", score1);
+      // localStorage.setItem("score2", score2);
+      // localStorage.setItem("score3", score3);
+      // localStorage.setItem("score4", score4);
+      console.log("score1", score1);
+      console.log("score2", score2);
+      console.log("score3", score3);
+      console.log("score4", score4);
+      console.log("score5", score5);
+      console.log("score6", score6);
+      let arr = [score1, score2, score3, score4, score5, score6];
+      let idx = arr.indexOf(Math.max(...arr));
+      if (idx) {
+        localStorage.setItem("idx", idx);
+      } else localStorage.setItem("idx", 0);
+
+      // for (let i = 0; i < 6; i++) {
+      //   arr.push(score + i);
+      // }
+      console.log(arr, "ar((rmaybe");
+      console.log(arr.sort(), "sorted");
+      // console.log(arr.max(), "max");
+      console.log(arr.indexOf(Math.max(...arr)), "final");
     }
     // console.log(inputElement.current.innerText, "ref");
   };
@@ -511,7 +618,7 @@ export default function () {
           {/* progress-bar */}
           <div className="w-6/12 md:w-9/12 bg-yellow-300 bg-opacity-30 rounded-full h-1.5 mb-1 ">
             <div
-              className="bg-primary h-1.5 rounded-full "
+              className="bg-octa h-1.5 rounded-full "
               style={{ width: `${progressPercentage}%` }}
             ></div>
           </div>

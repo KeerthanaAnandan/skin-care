@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from "../../Images/logo-with-text.jpg";
+import img from "../../Assets/first.jpg";
 import { Link } from "react-router-dom";
 import "./index.css";
 export default function Index() {
@@ -10,7 +10,7 @@ export default function Index() {
   };
   return (
     <div className=" text-center ">
-      <div className="flex bg-primary flex-row flex-wrap p-2 w-7/12 m-auto justify-between items-center rounded-lg">
+      <div className="flex bg-white flex-row flex-wrap p-2 w-7/12 m-auto justify-between items-center rounded-lg">
         <img src={img} alt="" className="md:w-5/12 p-2" />
 
         <div className="bg-white flex flex-col flex-wrap h-full w-full md:w-6/12 m-auto rounded-lg justify-center items-center  md:p-2">
@@ -24,19 +24,20 @@ export default function Index() {
               noValidate
             > */}
             <form
-              action="https://actualizecenter.us21.list-manage.com/subscribe/post?u=1a1bc234d6738f4d1f68c0704&amp;id=0dfec85d53&amp;f_id=0040c4e1f0"
+              action="https://live.us20.list-manage.com/subscribe/post?u=1cf5f0b15d013a3dcd1f651da&amp;id=024fdf37f2&amp;f_id=002052e6f0"
               method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
-              class="validate"
+              className="validate"
               target="_self"
             >
               <div id="mc_embed_signup_scroll">
                 <div>
                   <br />
                   <p className="text-xl decoration-8 font-bold m-1">
-                    Get to know your Makeup!
+                    Get to know your self care type!
                   </p>
+                  <br />
                   {/* <p className="text-md m-1 font-medium capitalize">
                     Fill the form to get personalized newsletters based on your
                     results
@@ -45,8 +46,8 @@ export default function Index() {
               </div>
 
               <div className="mc-field-group">
-                <label htmlFor="mce-FNAME">Name*</label>
-                <input type="text" name="FNAME" className="" id="mce-FNAME" />
+                <label htmlFor="mce-NAME">Name*</label>
+                <input type="text" name="NAME" className="" id="mce-NAME" />
               </div>
               {/* <div class="mc-field-group">
 	<label for="mce-LNAME">Last Name </label>
@@ -113,12 +114,12 @@ export default function Index() {
                 ""
               )}    disabled={email != " " ? true : false} */}
 
-              <div className="clear">
+              <div className="clear text-center">
                 <input
                   type="submit"
-                  value="Get Me Those Results!"
+                  value="See My Results!"
                   name="subscribe"
-                  className="cursor-pointer button p-3 m-1 bg-secondary rounded-lg text-white capitalize font-bold custom-single-page-btn-transition"
+                  className="cursor-pointer text-center button p-3 px-7 m-1 bg-secondary rounded-lg text-white capitalize font-bold custom-btn-transistion-primary"
                 />
                 <br />
 
@@ -129,7 +130,7 @@ export default function Index() {
                 <div>
                   <Link to="/results">
                     <span style={{ fontSize: "medium" }}>
-                      <a className="skipcolor no-decoration">Skip for now!</a>
+                      <a className="skipcolor underline">Skip for now!</a>
                     </span>
                   </Link>
                 </div>
