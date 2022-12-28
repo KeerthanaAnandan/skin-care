@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 // import img2 from "../../Images/q2.png";
 // import img3 from "../../Images/q3.png";
 import { Link } from "react-router-dom";
-import img1 from "../../Images/main-img.jpg";
-import img2 from "../../Assets/spiritual.jpg";
-import img3 from "../../Assets/emotional.jpg";
-import img4 from "../../Assets/social.jpg";
-import img5 from "../../Assets/mental.jpg";
-import img6 from "../../Assets/practical.jpg";
+import img1 from "../../Assets/Phyisical.jpg";
+import img2 from "../../Assets/Spiritual.jpg";
+import img3 from "../../Assets/Emotional.jpg";
+import img4 from "../../Assets/Social.jpg";
+import img5 from "../../Assets/Mental.jpg";
+import img6 from "../../Assets/Practical.jpg";
 
 export default function Index() {
   const [data, setData] = useState([]);
@@ -55,7 +55,7 @@ export default function Index() {
       type: "Emotional",
       typeG: "Emotional",
       text1:
-        "Emotional selfcare—the actions we take to connect with our emotions and process them in a healthy way ",
+        "Emotional selfcare the actions we take to connect with our emotions and process them in a healthy way ",
       text2:
         "You prefer Seeing a therapist, writing in a journal, creating art, playing music etc",
       text1G:
@@ -99,7 +99,7 @@ export default function Index() {
       text1:
         " Any actions you take to fulfill your core needs and reduce stress can be catalogued as practical selfcare.",
       text2:
-        "Yes, even mundane, everyday activities. Think of how much better you feel when you clean your room or stick to a workout routine; these forms of self-care are admittedly less exciting than others, but not to be underestimated. They are huge sanity-savers and help create a greater sense of calm and control in our busy lives.You prefer Creating a budget, taking professional development classes, organizing your closet, etc. ",
+        "Yes, even mundane, everyday activities. Think of how much better you feel when you clean your room or stick to a workout routine; these forms of selfcare are admittedly less exciting than others, but not to be underestimated. They are huge sanity-savers and help create a greater sense of calm and control in our busy lives.You prefer Creating a budget, taking professional development classes, organizing your closet, etc. ",
       text1G:
         "Alle Maßnahmen, die Sie ergreifen, um Ihre Kernbedürfnisse zu erfüllen und Stress abzubauen, können als praktische Selbstfürsorge katalogisiert werden.",
       test2G:
@@ -184,8 +184,8 @@ export default function Index() {
         <div className="flex bg-primary flex-col flex-wrap p-2 w-10/12 md:w-6/12  mx-1 mb-5 justify-between items-center rounded-lg">
           <p className="text-3xl decoration-8 font-bold m-1">
             {lan == "German"
-              ? `Gut gemacht🎉, Ihr Selfcare-Typ ist ${resultsData[idx].typeG}`
-              : `Well done🎉 , You’re selfcare type is ‘${resultsData[idx].type}’`}
+              ? `Gut gemacht🎉, Ihr selfcare Typ ist ${resultsData[idx].typeG}`
+              : `Well done🎉 , You’re Selfcare type is ‘${resultsData[idx].type}’`}
           </p>
           <br />
           <img src={resultsData[idx].img} alt="no" className="md:w-10/12 " />
@@ -208,6 +208,27 @@ export default function Index() {
                 {lan == "English" ? "TAKE QUIZ !" : "MACHEN SIE QUIZ !"}
               </button>
             </Link> */}
+            <br />
+            {lan == "German" ? (
+              <p>
+                Wenn es um Selfcare-Typen geht, kann es je nach Situation
+                variieren. Es ist auch möglich, dass du eine Mischung aus mehr
+                als einem Selfcare-Typ bist. Was völlig normal ist. Ich hoffe,
+                dass dir dies einen besseren Einblick in deinen Selfcare-Typ und
+                die Aktivitäten gibt, die du für dich selbst zum Entspannen tun
+                kannst. Folge mir auf Instagram oder besuche meinen Blog für
+                weitere Einblicke.
+              </p>
+            ) : (
+              <p>
+                When it comes to selfcare types, it may vary depending on the
+                situation. It is also possible that you are a mixture of more
+                than one selfcare type. Which is totally normal, I hope this
+                gives you a better glimpse of your selfcare type and the
+                activities you can do for yourself to relax. Follow me on
+                Instagram or visit my blog for more insights.{" "}
+              </p>
+            )}
 
             <br />
           </div>

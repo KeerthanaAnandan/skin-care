@@ -35,7 +35,7 @@ export default function Index() {
                 <div>
                   <br />
                   <p className="text-xl decoration-8 font-bold m-1">
-                    Get to know your self care type!
+                    Get to know your selfcare type!
                   </p>
                   <br />
                   {/* <p className="text-md m-1 font-medium capitalize">

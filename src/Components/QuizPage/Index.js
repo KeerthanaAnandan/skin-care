@@ -10,15 +10,15 @@ export default function () {
     {
       id: 1,
       question:
-        "What is the first thing that comes to your mind when you hear ‘selfcare” ?",
+        'What is the first thing that comes to your mind when you hear "selfcare" ?',
       quesAlt:
-        "Was kommt Ihnen als erstes in den Sinn, wenn Sie „Selfcare“ hören?",
+        'Wenn ich "Selfcare" höre, was kommt dir als erstes in den Sinn?',
       category: "Common",
       options: [
         {
           id: 1,
-          op: "Doing Skin care",
-          opAlt: "Hautpflege machen",
+          op: "Doing skin care",
+          opAlt: "Hautpflege",
           isSelected: false,
           score: 1,
           type: "Physical",
@@ -26,7 +26,7 @@ export default function () {
         {
           id: 2,
           op: "Doing yoga",
-          opAlt: "Yoga machen",
+          opAlt: "Yoga",
           isSelected: false,
           score: 1,
           type: "Spiritual",
@@ -46,7 +46,7 @@ export default function () {
       question:
         "If you were given a chance to do any one of the following activities what would you choose ?",
       quesAlt:
-        "Wenn Sie die Möglichkeit hätten, eine der folgenden Aktivitäten zu machen, was würden Sie wählen?",
+        "Wenn du die Möglichkeit hättest, eine der folgenden Aktivitäten zu machen, was würdest du dann wählen?",
 
       category: "Common",
       options: [
@@ -61,7 +61,7 @@ export default function () {
         {
           id: 2,
           op: "Take a walk / workout",
-          opAlt: "Machen Sie einen Spaziergang / trainieren Sie",
+          opAlt: "Mache einen Spaziergang / Trainieren gehen",
           isSelected: false,
           score: 1,
           type: "Physical",
@@ -69,7 +69,7 @@ export default function () {
         {
           id: 3,
           op: "Spend time with friends ",
-          opAlt: "Verbringen Sie Zeit mit Freunden",
+          opAlt: "Verbringe Zeit mit Freunden",
           isSelected: false,
           score: 1,
           type: "Social",
@@ -78,14 +78,15 @@ export default function () {
     },
     {
       id: 3,
-      question: "If you were given a 100$ , what would you spend it on ?",
+      question: "If you were given a 100€ , what would you spend it on ?",
       quesAlt: "Wenn du 100€ bekommen würdest, wofür würdest du sie ausgeben?",
       category: "Common",
       options: [
         {
           id: 1,
           op: "Host a party/brunch with loved ones ",
-          opAlt: "Veranstalten Sie eine Party/einen Brunch mit Ihren Lieben",
+          opAlt:
+            "Veranstaltest du eine Party oder ein Brunch mit deinen Freunde ",
           isSelected: false,
           score: 1,
           type: "Social",
@@ -93,7 +94,7 @@ export default function () {
         {
           id: 2,
           op: "buy a course/ go to development class ",
-          opAlt: "einen Kurs kaufen/zu einem Entwicklungskurs gehen",
+          opAlt: "Einen Kurs",
           isSelected: false,
           score: 1,
           type: "Practical",
@@ -101,8 +102,7 @@ export default function () {
         {
           id: 3,
           op: "See a therapist / buy a journal",
-          opAlt:
-            "Suchen Sie einen Therapeuten auf / kaufen Sie eine Zeitschrift",
+          opAlt: "Suche einen Therapeuten auf/ Kaufe eine Zeitschrift",
           isSelected: false,
           score: 1,
           type: "Emotional",
@@ -118,7 +118,7 @@ export default function () {
         {
           id: 1,
           op: "Tidy up living space ",
-          opAlt: "Wohnraum aufräumen ",
+          opAlt: "Wohnung aufräumen",
           isSelected: false,
           score: 1,
           type: "Practical",
@@ -126,15 +126,15 @@ export default function () {
         {
           id: 2,
           op: "Visit the museum",
-          opAlt: "Besuchen Sie das Museum",
+          opAlt: "Museumsbesuch",
           isSelected: false,
           score: 1,
           type: "Mental",
         },
         {
           id: 3,
-          op: "Yoga/meditate ",
-          opAlt: "Yoga/meditate",
+          op: "Yoga/Meditate ",
+          opAlt: "Yoga/Meditate",
           isSelected: false,
           score: 1,
           type: "Spiritual",
@@ -144,14 +144,14 @@ export default function () {
     //emotional
     {
       id: 5,
-      question: "Do you practise Gratitude?",
+      question: "Do you practise gratitude?",
       quesAlt: "Praktizierst du Dankbarkeit?",
       category: "Emotional",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -162,14 +162,14 @@ export default function () {
     //spiritual
     {
       id: 21,
-      question: "Do you believe in universe/god ?",
-      quesAlt: "Glaubst du an das Universum/Gott",
+      question: "Do you believe in universe/God?",
+      quesAlt: "Glaubst du an das Universum/Gott?",
       category: "Spiritual",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -182,13 +182,13 @@ export default function () {
       id: 6,
       question: "I spend most of my free time with loved ones",
       quesAlt:
-        "Ich verbringe den größten Teil meiner Freizeit mit meinen Lieben",
+        "Ich verbringe den größten Teil meiner Freizeit mit meinen Liebsten",
       category: "Social",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -205,10 +205,10 @@ export default function () {
         "Ich gehe lieber ins Museum/Ausstellung, als Zeit mit unproduktiven Dingen zu verbringen",
       category: "Mental",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -220,15 +220,14 @@ export default function () {
     {
       id: 8,
       question:
-        "How well you you agree “I do exercise/yoga/dance on daily basics “",
-      quesAlt:
-        "Wie gut stimmen Sie zu „Ich mache Sport/Yoga/Tanz zu den täglichen Grundlagen“",
+        "How well you agree “I do exercise/yoga/dance on daily basics “",
+      quesAlt: "Zählt Sport/Yoga/Tanz zu deinen täglichen Grundlagen?",
       category: "Physical",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -240,13 +239,13 @@ export default function () {
     {
       id: 9,
       question: "Do you journal?",
-      quesAlt: "Tagebuchst du?",
+      quesAlt: "Schreibst du in einem Journal? ",
       category: "Emotional",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -258,13 +257,13 @@ export default function () {
     {
       id: 44,
       question: "Do you spend a lot of time with nature ?",
-      quesAlt: "Verbringen Sie viel Zeit mit der Natur?",
+      quesAlt: "Verbringst du viel Zeit in der Natur?",
       category: "Spiritual",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -280,10 +279,10 @@ export default function () {
         "Ich bereite Mahlzeiten vor / lege Kleidung für die Woche im Voraus bereit",
       category: "Practical",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -298,10 +297,10 @@ export default function () {
       quesAlt: "Ich spreche oft am Telefon / moderiere Veranstaltungen",
       category: "Social",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -313,13 +312,14 @@ export default function () {
     {
       id: 12,
       question: "I like to take bubble bath / nap during my free/personal time",
-      quesAlt: "In meiner Freizeit mache ich gerne Schaumbad / Schläfchen",
+      quesAlt:
+        "In meiner Freizeit nehme ich gerne ein Schaumbad oder mache ein Schläfchen",
       category: "Physical",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -334,10 +334,10 @@ export default function () {
       quesAlt: "Ich lese viele Bücher",
       category: "Mental",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -351,13 +351,13 @@ export default function () {
       question:
         "I tidy up the space / spend time on organizing my schedule on my free time",
       quesAlt:
-        "Ich räume den Raum auf / verbringe Zeit damit, meinen Zeitplan in meiner Freizeit zu organisieren",
+        "Ich räume gerne meine Räumlichkeiten auf / verbringe Zeit damit, meinen Zeitplan in meiner Freizeit zu organisieren",
       category: "Practical",
       options: [
-        { id: 1, op: "Yes", opAlt: "Jawohl", isSelected: false, score: 1 },
+        { id: 1, op: "Yes", opAlt: "Ja", isSelected: false, score: 1 },
         {
           id: 2,
-          op: "SomeWhat",
+          op: "Somewhat",
           opAlt: "Etwas",
           isSelected: false,
           score: 0.5,
@@ -548,7 +548,7 @@ export default function () {
   return (
     <div className="text-center ">
       <br />
-      {lan == "German" ? "germy" : "english"}
+      {/* {lan == "German" ? "germy" : "english"} */}
       <div className="flex flex-col justify-center items-center m-auto w-7/12 h-100">
         {/* {questions.map((ques) => {
           return ( */}

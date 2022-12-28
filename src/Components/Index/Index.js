@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import img from "../../Images/main-img.jpg";
+import img from "../../Assets/main.jpg";
 
 import { Link } from "react-router-dom";
 export default function Index() {
@@ -100,7 +100,7 @@ export default function Index() {
               English
             </span>
             <span className="px-4 py-2 dark:bg-primary peer-checked:dark:bg-embrod rounded-full">
-              German
+              Deutsch
             </span>
           </label>
         </div>
@@ -111,8 +111,8 @@ export default function Index() {
         <div className="flex bg-primary flex-col flex-wrap p-2 w-10/12 md:w-6/12  mx-1 mb-5 justify-between items-center rounded-lg">
           <p className="text-3xl decoration-8 font-bold m-1">
             {lan == true
-              ? "What is your self care type ?"
-              : "Was ist Ihr Self-Care-Typ?"}
+              ? "What is your selfcare type ?"
+              : "Was ist Ihr Selfcare-Typ?"}
           </p>
           <br />
           <img src={img} alt="" className="md:w-10/12 " />
@@ -123,12 +123,12 @@ export default function Index() {
             <p className="text-md m-1 font-medium">
               {lan == true
                 ? "It is important to take time for yourself and find clarity. The most important relationship is the one you have with yourself."
-                : "Es ist wichtig, sich Zeit für sich selbst zu nehmen und Klarheit zu finden. Das Die wichtigste Beziehung ist die zu sich selbst."}
+                : "Es ist wichtig, sich Zeit für sich selbst zu nehmen und Klarheit zu finden. Die wichtigste Beziehung ist die zu sich selbst."}
             </p>
             <p>
               {lan == true
-                ? "Take this quick quiz to find out what type of self-care you need and make the most use of it."
-                : "Nehmen Sie an diesem kurzen Quiz teil, um herauszufinden, welche Art von Selbstfürsorge Sie benötigen und das Beste daraus machen."}
+                ? "Take this quick quiz to find out what type of selfcare you need and make the most use of it."
+                : "Nimm an diesem kurzen Quiz teil, um herauszufinden, welche Art von Selbstfürsorge du benötigst und das Beste daraus machst."}
             </p>
             <Link to="/quiz" className="w-full text-center">
               <button className="p-3 m-1 w-full text-white text-center  capitalize font-bold  custom-btn-transistion-primary">
