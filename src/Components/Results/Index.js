@@ -5,10 +5,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import img1 from "../../Assets/Phyisical.jpg";
 import img2 from "../../Assets/spi.jpg";
-import img3 from "../../Assets/Emotional.jpg";
-import img4 from "../../Assets/Social.jpg";
-import img5 from "../../Assets/Mental.jpg";
-import img6 from "../../Assets/Practical.jpg";
+import img3 from "../../Assets/emotional.jpg";
+import img4 from "../../Assets/social.jpg";
+import img5 from "../../Assets/mental.jpg";
+import img6 from "../../Assets/practical.jpg";
 
 export default function Index() {
   const [data, setData] = useState([]);
