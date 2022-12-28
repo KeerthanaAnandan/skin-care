@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 // import img3 from "../../Images/q3.png";
 import { Link } from "react-router-dom";
 import img1 from "../../Assets/Phyisical.jpg";
-import img2 from "../../Assets/Spiritual.jpg";
+import img2 from "../../Assets/spi.jpg";
 import img3 from "../../Assets/Emotional.jpg";
 import img4 from "../../Assets/Social.jpg";
 import img5 from "../../Assets/Mental.jpg";
