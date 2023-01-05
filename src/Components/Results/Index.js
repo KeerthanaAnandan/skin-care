@@ -44,9 +44,9 @@ export default function Index() {
       text2:
         "You prefer Taking a walk during lunch breaks, sleeping eight hours a day, staying hydrated, etc.",
       text1G:
-        "Körperliche Art der Selbstpflege bezieht sich auf alle Aktivitäten, die Sie bewusst ausüben, um Ihr körperliches Wohlbefinden zu steigern.",
+        "Die körperliche Art der Selbstfürsorge bezieht sich auf alle Aktivitäten, die du bewusst ausübst, um dein körperliches Wohlbefinden zu steigern. ",
       test2G:
-        "Sie gehen lieber in der Mittagspause spazieren, schlafen acht Stunden am Tag, bleiben hydriert usw.",
+        "Du gehst lieber in der Mittagspause spazieren, schläfst acht Stunden am Tag und bleibst hydriert, um deine körperliche Gesundheit zu fördern.",
       img: img1,
     },
 
@@ -55,13 +55,13 @@ export default function Index() {
       type: "Emotional",
       typeG: "Emotional",
       text1:
-        "Emotional selfcare the actions we take to connect with our emotions and process them in a healthy way ",
+        "Emotional selfcare the actions we take to connect with our emotions and process them in a healthy way. ",
       text2:
-        "You prefer Seeing a therapist, writing in a journal, creating art, playing music etc",
+        "You prefer Seeing a therapist, writing in a journal, creating art, playing music etc.",
       text1G:
-        " Emotionale Selbstfürsorge – die Maßnahmen, die wir ergreifen, um uns mit unseren Emotionen zu verbinden und sie auf gesunde Weise zu verarbeiten",
+        "Emotionale Selbstfürsorge bezieht sich auf die Maßnahmen, die wir ergreifen, um uns mit unseren Emotionen zu verbinden und sie auf gesunde Weise zu verarbeiten. ",
       test2G:
-        "Du gehst lieber zu einem Therapeuten, schreibst in ein Tagebuch, erschaffst Kunst, spielst Musik etc",
+        "Du gehst lieber zu einem Therapeuten, schreibst in ein Tagebuch, erschaffst Kunst oder spielst Musik, um deine emotionalen Bedürfnisse zu pflegen.",
       img: img3,
     },
     {
@@ -73,9 +73,9 @@ export default function Index() {
       text2:
         "You prefer Brunch with friends, going on a date, making time to call your mom regularly, etc.",
       text1G:
-        "Soziale Selbstfürsorge umfasst Aktivitäten, die die Beziehungen zu Menschen in Ihrem Leben pflegen und vertiefen.",
+        "Soziale Selbstfürsorge umfasst Aktivitäten, die die Beziehungen zu Menschen in deinem Leben pflegen und vertiefen. ",
       test2G:
-        "Du bevorzugst Brunch mit Freunden, gehst auf ein Date, nimmst dir Zeit, um deine Mutter regelmäßig anzurufen usw.",
+        "Du bevorzugst Brunch mit Freunden, gehst auf ein Date, nimmst dir Zeit, um deine Mutter regelmäßig anzurufen, um deine sozialen Bindungen zu stärken.",
       img: img4,
     },
     {
@@ -87,9 +87,9 @@ export default function Index() {
       text2:
         "You prefer Reading a book, solving a puzzle, playing chess, going to a museum, etc.",
       text1G:
-        "Mentale Selbstfürsorge umfasst alles, was Sie tun, um Ihren Geist zu stimulieren und eine gesunde Psyche zu kultivieren. Es geht nicht darum, einen mentalen Zustand des Nirvana zu erreichen, sondern darum, Ihren Geist zu verstehen und eine liebevolle Beziehung zu ihm aufzubauen.",
+        "Mentale Selbstfürsorge umfasst alles, was du tust, um deinen Geist zu stimulieren und eine gesunde Psyche zu kultivieren. Es geht nicht darum, einen mentalen Zustand des Nirvana zu erreichen, sondern darum, deinen Geist zu verstehen und eine liebevolle Beziehung zu ihm aufzubauen.",
       test2G:
-        "Sie lesen lieber ein Buch, lösen ein Rätsel, spielen Schach, gehen ins Museum usw.",
+        " Du liest lieber ein Buch, löst ein Rätsel, spielst Schach oder gehst ins Museum, um deine mentale Fitness zu fördern.",
       img: img5,
     },
     {
@@ -101,9 +101,9 @@ export default function Index() {
       text2:
         "Yes, even mundane, everyday activities. Think of how much better you feel when you clean your room or stick to a workout routine; these forms of selfcare are admittedly less exciting than others, but not to be underestimated. They are huge sanity-savers and help create a greater sense of calm and control in our busy lives.You prefer Creating a budget, taking professional development classes, organizing your closet, etc. ",
       text1G:
-        "Alle Maßnahmen, die Sie ergreifen, um Ihre Kernbedürfnisse zu erfüllen und Stress abzubauen, können als praktische Selbstfürsorge katalogisiert werden.",
+        "Alle Maßnahmen, die du ergreifst, um deine Kernbedürfnisse zu erfüllen und Stress abzubauen, können als praktische Selbstfürsorge katalogisiert werden. Ja, sogar banale, alltägliche Aktivitäten. Denke daran, wie viel besser du dich fühlst, wenn du dein Zimmer aufräumst oder dich an eine Trainingsroutine hältst. Diese Formen der Selbstfürsorge sind zwar weniger spannend als andere, aber nicht zu unterschätzen. Sie sind enorme Vernunftsparer und tragen dazu bei, ein größeres Gefühl der Ruhe und Kontrolle in unserem beschäftigen Leben zu schaffen. ",
       test2G:
-        "Ja, sogar banale, alltägliche Aktivitäten. Denken Sie daran, wie viel besser Sie sich fühlen, wenn Sie Ihr Zimmer aufräumen oder sich an eine Trainingsroutine halten. Diese Formen der Selbstfürsorge sind zwar weniger spannend als andere, aber nicht zu unterschätzen. Sie sind enorme Vernunftsparer und tragen dazu bei, ein größeres Gefühl der Ruhe und Kontrolle in unserem geschäftigen Leben zu schaffen. Sie ziehen es vor, ein Budget zu erstellen, professionelle Entwicklungskurse zu besuchen, Ihren Kleiderschrank zu organisieren usw.",
+        "Als Praktische Selfcaretyp ziehst du es vor, ein Budget zu erstellen, professionelle Entwicklungskurse zu besuchen oder deinen Kleiderschrank zu organisieren, um deine praktischen Bedürfnisse zu pflegen.",
       img: img6,
     },
     {
@@ -115,9 +115,9 @@ export default function Index() {
       text2:
         "You prefer Meditation, yoga, going to a place of worship, be in nature, dedicate time for self-reflection, etc.",
       text1G:
-        "Spirituelle Selbstfürsorge umfasst alle Aktivitäten, an denen Sie sich beteiligen, um sich mit Ihrer Seele zu verbinden und sie zu pflegen. Bei dieser Praxis geht es im Wesentlichen darum, sich mit Ihrem inneren Geist zu verbinden. Für einige kann dies Aktivitäten beinhalten, die den Glauben an eine höhere Macht (Gott, das Universum oder was auch immer Sie führt) ehren.",
+        "Spirituelle Selbstfürsorge umfasst alle Aktivitäten, an denen du teilnimmst, um dich mit deiner Seele zu verbinden und sie zu pflegen. Bei dieser Praxis geht es im Wesentlichen darum, dich mit deinem inneren Geist zu verbinden. Für manche kann dies Aktivitäten beinhalten, die den Glauben an eine höhere Macht (Gott oder das Universum) ehren.",
       test2G:
-        "Du bevorzugst Meditation, Yoga, einen Gottesdienst besuchen, in der Natur sein, dir Zeit für Selbstreflexion nehmen etc.",
+        "Du bevorzugst Meditation, einen Gottesdienst zu besuchen, in der Natur zu sein oder dir Zeit für Selbstreflexion zu nehmen, um deine spirituellen Bedürfnisse zu pflegen.",
       img: img2,
     },
   ]);

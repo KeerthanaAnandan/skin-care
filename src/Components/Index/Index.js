@@ -112,7 +112,7 @@ export default function Index() {
           <p className="text-3xl decoration-8 font-bold m-1">
             {lan == true
               ? "What is your selfcare type ?"
-              : "Was ist Ihr Selfcare-Typ?"}
+              : "Was ist dein Selfcare-Typ?"}
           </p>
           <br />
           <img src={img} alt="" className="md:w-10/12 " />
@@ -120,15 +120,15 @@ export default function Index() {
           <div className=" flex flex-col flex-wrap h-full w-full md:w-11/12 m-auto rounded-lg justify-center items-center  md:p-2">
             <br />
 
-            <p className="text-md m-1 font-medium">
+            <p className="text-md m-1 font-semibold">
               {lan == true
                 ? "It is important to take time for yourself and find clarity. The most important relationship is the one you have with yourself."
-                : "Es ist wichtig, sich Zeit für sich selbst zu nehmen und Klarheit zu finden. Die wichtigste Beziehung ist die zu sich selbst."}
+                : "Die wichtigste Beziehung ist die zu sich selbst. Es ist hilfreich, verschiedene Formen der Selbstfürsorge auszuprobieren und herauszufinden, was für dich am besten funktioniert. "}
             </p>
-            <p>
+            <p className="font-semibold m-1">
               {lan == true
                 ? "Take this quick quiz to find out what type of selfcare you need and make the most use of it."
-                : "Nimm an diesem kurzen Quiz teil, um herauszufinden, welche Art von Selbstfürsorge du benötigst und das Beste daraus machst."}
+                : 'Es gibt kein "richtiges" oder "falsches" in Bezug auf Selbstfürsorge - es geht darum, was für dich am besten funktioniert, um dich gut um dich selbst zu kümmern. Nimm an diesem kurzen Quiz teil, um herauszufinden, welche Art von Selbstfürsorge du momentan benötigst.'}
             </p>
             <Link to="/quiz" className="w-full text-center">
               <button className="p-3 m-1 w-full text-white text-center  capitalize font-bold  custom-btn-transistion-primary">
