@@ -132,7 +132,7 @@ export default function Index() {
             </p>
             <Link to="/quiz" className="w-full text-center">
               <button className="p-3 m-1 w-full text-white text-center  capitalize font-bold  custom-btn-transistion-primary">
-                {lan == true ? "TAKE QUIZ !" : "MACHEN SIE QUIZ !"}
+                {lan == true ? "TAKE QUIZ!" : " QUIZ STARTEN!"}
               </button>
             </Link>
 
